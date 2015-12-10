@@ -3,6 +3,13 @@
 <head>
 	<title>RadicalPhoto</title>
 	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+	
+	
+	  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!-- Put your plugin codes here -->
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <link href="path/to/lightbox.css" rel="stylesheet">
+        
 	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
 </head>
 <body>
@@ -24,10 +31,12 @@
 	<div id="content">
 	<h2>Page heading</h2>
 
-	<div id="slider">
-	    <img src="images/slider_alligator.jpg" title="Chomp">
-		<p>Award Winning Photography</p>
-	</div>
+<div class="fotorama" id="slider" data-autoplay="true" data-loop="true">
+   <img src="images/slider_alligator.jpg" title="Chomp" alt="alligator">
+   <img src="images/slider_cow.jpg" title="Moo" alt="cow">
+    <img src="images/slider_ladybug.jpg" title="Ladybug" alt="ladybug">
+    <img src="images/slider_turtle.jpg" title="Turtle" alt="turtle">
+</div>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
@@ -55,6 +64,11 @@
 	</div>
 
 </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--Plug ins-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script src="path/to/lightbox.js"></script>
 
 </body>
 </html>

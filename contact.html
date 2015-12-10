@@ -30,9 +30,9 @@
 
 		<p class="errors">All fields are required.</p>
 
-		<p><label>Name: <input type="text" size="25" name="name" id="username"></label></p>
-		<p><label>Email: <input type="text" size="25" name="email" id="email"></label></p>
-		<p><label>Message:<br> <textarea cols="50" rows="5" name="message" id="my_message"></textarea></label></p>
+		<p><label>Name: <input type="text" size="25" name="name" id="username"></label><span id="name_error"></span></p>
+		<p><label>Email: <input type="text" size="25" name="email" id="email"></label><span id="email_error"></span></p>
+		<p><label>Message:<br> <textarea cols="50" rows="5" name="message" id="my_message"></textarea></label><span id="message_error"></span></p>
 		<p><input type="submit" value="Contact Us"></p>
 	</form>
 
@@ -43,6 +43,7 @@
 	</div>
 
 </div>
-
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="js/main.js"></script>
 </body>
 </html>
